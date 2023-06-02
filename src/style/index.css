@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #ff3a3a;
+}
+
+body {
+    background-color: #212121;
+    color: #fff;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: min(100% - 30px, 1080px);
+    height: 100%;
+    margin-inline: auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    height: 50px;
+}
+
+header .container {
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+.banner {
+    position: relative;
+    height: calc(50vh - 50px);
+    background-color: #3a3a3a;
+    background-image: url("https://aws.wideinfo.org/blogexpress.org/wp-content/uploads/2017/03/02004354/landscape-1481544497-best-xbox-one-games-collage-7.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgb(0 0 0 / 0.7);
+}
+
+.banner .container {
+    justify-content: center;
+}
+
+.banner-content {
+    text-align: center;
+    z-index: 1;
+}
+
+.banner-content h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.banner-btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+main.container {
+    flex: 1;
+    flex-direction: column;
+    padding: 25px 10px;
+}
+
+.gallery h2 {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.gallery-items {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+footer {
+    height: 80px;
+    background-color: #1b1b1b;
+}
