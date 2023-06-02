@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/game-shore/static/css/main.a3cf0586.css",
+    "main.js": "/game-shore/static/js/main.1f8c4d26.js",
+    "index.html": "/game-shore/index.html",
+    "main.a3cf0586.css.map": "/game-shore/static/css/main.a3cf0586.css.map",
+    "main.1f8c4d26.js.map": "/game-shore/static/js/main.1f8c4d26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3cf0586.css",
+    "static/js/main.1f8c4d26.js"
+  ]
+}
